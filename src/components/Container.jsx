@@ -1,7 +1,9 @@
-function Container(props) {
-    console.log("Props de Container", props)
+function Container({handleChangeName}) {
+    console.log("Componente Container montado")
     return (
-        <p>{props.saludo}</p>
+        <div>
+            <button onClick={handleChangeName}>Cambiar nombre</button>
+        </div>
     )
 }
 
